@@ -9,9 +9,12 @@ const typeDefs = `
         user: String!
         content: String!
     }
+
+
+    type Query {
+        
+    }
 `
-
-
 
 const server = new GraphQLServer();
 server.start(({port}) => {
