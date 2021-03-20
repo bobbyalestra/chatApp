@@ -4,7 +4,11 @@
 const { GraphQLServer } = require("graphql-yoga");
 
 const typeDefs = `
-    type Message {}
+    type Message {
+        id : ID!
+        user: String!
+        content: String!
+    }
 `
 
 
